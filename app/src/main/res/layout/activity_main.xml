@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.freshleafy.freshleafy.MainActivity"
+    android:orientation="vertical"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <!--<android.support.v4.widget.DrawerLayout-->
+        <!--android:id="@+id/drawer_layout"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_width="match_parent"-->
+        <!--&gt;-->
+        <!--<FrameLayout-->
+        <!--android:id="@+id/content_frame"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+        <!--</FrameLayout>-->
+        <!---->
+        <!--<ListView-->
+        <!--android:id="@+id/left_drawer"-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:choiceMode="singleChoice"-->
+        <!--android:divider="@android:color/transparent"-->
+        <!--android:dividerHeight="1dp"-->
+        <!--android:background="#fff"-->
+        <!--&gt;-->
+        <!--</ListView>-->
+        <!--</android.support.v4.widget.DrawerLayout>-->
+
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.AppBarLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            />
+
+        <LinearLayout
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/my_account_text_view"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:layout_height="60dp"
+                android:textColor="@color/white"
+                android:text="My Account (मेरा खाता)"
+                android:background="@color/colorSecondary"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/cart_text_view"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@color/colorSecondary"
+                android:layout_height="60dp"
+                android:textAllCaps="true"
+                android:text="Cart (कार्ट)"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

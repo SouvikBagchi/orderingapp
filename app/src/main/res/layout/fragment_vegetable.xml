@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="fill_parent"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+
+    >
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:paddingTop="2dp"
+        android:background="@color/white"
+
+        >
+        <ImageView
+            android:id="@+id/vegetable_fragment_fruit_image"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            tools:background="@color/white"
+            />
+
+        <LinearLayout
+            android:paddingLeft="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            >
+            <TextView
+                tools:text="Cauliflower"
+                android:layout_gravity="center"
+                android:gravity="left|center"
+                android:id="@+id/vegetable_fragment_english_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/dark_orange"
+                />
+
+            <!--android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+            <!--android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+
+
+            <TextView
+                tools:text="गोभी"
+                android:textColor="@color/dark_orange"
+                android:layout_gravity="center"
+                android:gravity="left|center"
+                android:id="@+id/vegetable_fragment_hindi_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    tools:text="₹ 100"
+                    android:layout_gravity="center"
+                    android:gravity="left|center"
+                    android:id="@+id/vegetable_fragment_unit_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/fresh_leafy_green"
+                    android:paddingRight="4dp"
+                    />
+
+                <TextView
+                    tools:text="Per box"
+                    android:layout_gravity="center"
+                    android:gravity="left|center"
+                    android:textColor="@color/fresh_leafy_green"
+                    android:id="@+id/vegetable_fragment_unit_measure"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/vegetable_fragment_quantity_increment"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                tools:text="Quantity +2"
+                android:layout_gravity="center"
+                android:gravity="left|center"
+                android:textColor="@color/fresh_leafy_green"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+
+
+                >
+                <Button
+                    android:id="@+id/vegetable_fragment_decrement"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:text="-"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:background="@color/light_orange"
+                    />
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/vegetable_fragment_quantity_text_view"
+                    android:layout_gravity="center"
+                    tools:text="0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:gravity="center"
+                    android:layout_width="50dp"
+                    android:layout_height="44dp"
+                    android:textColor="@color/black"
+                    android:background="@color/white"
+                    />
+
+
+                <Button
+                    android:text="+"
+                    android:layout_weight="1"
+                    android:background="@color/light_orange"
+                    android:id="@+id/vegetable_fragment_increment"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingRight="10dp"
+
+                >
+
+                <TextView
+                    android:id="@+id/vegetable_fragment_total_price_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Total Price - "
+                    android:layout_gravity="center"
+                    android:gravity="center|bottom"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/vegetable_fragment_price_calculation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="7 x 100 = 700"
+                    android:gravity="center|bottom"
+                    android:textColor="@color/black"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

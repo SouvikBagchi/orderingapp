@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context="com.freshleafy.freshleafy.loadingActivities.ConfirmOrderLoadingActivity">
+
+    >
+
+    <LinearLayout
+        android:id="@+id/post_posting_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="center"
+            android:text="Your order has been placed !"
+
+            />
+
+        <Button
+            android:id="@+id/main_menu_navigation_button"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Go back to New Order Menu"
+            android:background="@color/colorSecondaryAccent"
+            android:shadowColor="@color/colorSecondaryDark"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/posting_order_loading"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/order_confirmation_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|bottom"
+                android:text="Ordering"
+                />
+
+            <ProgressBar
+                android:id="@+id/loading_indicator"
+                style="@style/Widget.AppCompat.ProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                >
+            </ProgressBar>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|top"
+                android:text="Freshness"
+
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.freshleafy.freshleafy">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".Global"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".data.LeafyProvider"
+            android:authorities="com.freshleafy.freshleafy"
+            android:exported="true" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="New Order"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CartActivity"
+            android:label="Cart (कार्ट)" />
+        <activity
+            android:name=".MyAccountActivity"
+            android:label="My Account (मेरा खाता)" />
+        <activity
+            android:name=".MyOrders"
+            android:label="My Orders (खरिदे)" />
+        <activity
+            android:name=".OrderDetailsActivity"
+            android:label="Order Details" />
+        <activity android:name=".loadingActivities.ItemsSoldLoadActivity" />
+        <activity android:name=".PlaceOrderActivity" />
+        <activity android:name=".loadingActivities.DeliverySlotLoadActivity" />
+        <activity android:name=".ConfirmOrderActivity" />
+        <activity android:name=".loadingActivities.ConfirmOrderLoadingActivity" />
+        <activity android:name=".loadingActivities.FailedLoginCredentialsActivity" />
+        <activity android:name=".loadingActivities.ServerNotRunningActivity" />
+        <activity android:name=".RestartActivity" />
+        <activity android:name=".loadingActivities.OrderLoadingActivity" />
+        <activity android:name=".NoInternetActivity" />
+        <activity android:name=".ProfileActivty"></activity>
+    </application>
+
+</manifest>

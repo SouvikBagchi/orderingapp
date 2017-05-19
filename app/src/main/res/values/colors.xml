@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#76d275</color>
+    <color name="colorPrimaryDark">#43a047</color>
+    <color name="colorAccent">#a9ffa5</color>
+
+    <!-- light_green_boundary -->
+    <color name="colorSecondary">#ff6f00</color>
+    <color name="colorSecondaryDark">#c43e00</color>
+    <color name="colorSecondaryAccent">#ffa040</color>
+
+    <!-- fresh leafy green -->
+    <color name="fresh_leafy_green">#43a047</color>
+
+    <!-- background green colour -->
+    <color name="background_green">#f1f8e9</color>
+
+    <!-- place new order colour -->
+    <color name="lightest_green">#689f38</color>
+
+    <!-- my orders color -->
+    <color name="my_orders">#fbc02d</color>
+
+    <!-- login background colour -->
+    <color name="login_background">#fbc02d</color>
+
+    <!-- main activity colours -->
+    <color name="white">#ffffff </color>
+
+    <color name="dark_orange">#8c2f12</color>
+
+    <color name="light_orange">#FFE0B2</color>
+
+    <color name="dark_green">#214d22</color>
+
+    <color name="light_green">#DCEDC8</color>
+
+    <color name="black">#000</color>
+
+</resources>
+

@@ -1,0 +1,43 @@
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    >
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/my_profile_text_view_main"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:text="Kuch kuch dikhaunga"-->
+    <!--/>-->
+    <!--</ScrollView>-->
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/image_view_my_profile"-->
+    <!--/>-->
+
+    <ListView
+        android:id="@+id/listview_vegetable_frag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:text="Fruits"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No Vegetable Items"
+        android:gravity="center"
+        android:id="@+id/vegetable_fragment_empty_view"
+        />
+
+
+
+</RelativeLayout>

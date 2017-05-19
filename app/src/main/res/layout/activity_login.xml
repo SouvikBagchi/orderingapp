@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!-- Empty view is only visible when the list has no items. -->
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        tools:text="No Internet Connection"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <ScrollView
+
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:fitsSystemWindows="true"
+        android:id="@+id/loginScrollView"
+
+        >
+
+        <LinearLayout
+
+            android:id="@+id/activity_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="56dp"
+            >
+
+            <ImageView
+                android:id="@+id/login_image_view"
+                android:layout_width="200dp"
+                android:adjustViewBounds="true"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main_logo"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitCenter"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/login_name_edit_text"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:layout_height="75dp"
+                    android:layout_weight="1"
+                    android:hint="@string/login_name"
+                    android:gravity="center"
+                    android:textColor="@color/fresh_leafy_green"
+                    android:textColorHint="@color/colorSecondary"
+                    android:backgroundTint="@color/colorSecondaryAccent"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                >
+
+                <EditText
+                    android:id="@+id/password_edit_text"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:layout_height="75dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/fresh_leafy_green"
+                    android:backgroundTint="@color/colorSecondaryAccent"
+                    android:textColorHint="@color/colorSecondary"
+
+                    />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@color/colorSecondary"
+                android:textColor="@color/white"
+                android:text="@string/login_button"
+
+                />
+
+            <TextView
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="If you don't have a login id please contact mail at info@freshleafy.com"
+                android:textColor="@color/fresh_leafy_green"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+
+    >
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Order No"
+            android:gravity="center"
+            android:background="@color/light_green"
+            />
+
+
+        <TextView
+            android:id="@+id/order_id_textview"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:background="@color/colorSecondaryAccent"
+            tools:text="4"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/order_placed_date"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            tools:text="Order Placed Date - 2017-04-05"
+            />
+
+
+        <TextView
+            android:id="@+id/order_delivery_date"
+            android:gravity="center|left"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            tools:text="Order delivery Date - 2017-04-05"
+            />
+
+
+        <TextView
+            android:id="@+id/order_delivery_time"
+            android:gravity="center|left"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            tools:text="Order Delivery Time - 07:00"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Total"
+            android:gravity="center"
+            />
+
+
+        <TextView
+
+            android:id="@+id/my_order_total_price"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:text="10000"
+            android:gravity="center"
+            />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -22,7 +22,7 @@ import java.util.List;
 
 public class ItemsSoldLoadActivity extends AppCompatActivity {
 
-    private static final String URL_ITEMS_SOLD_QUERY = "http://ec2-34-209-89-98.us-west-2.compute.amazonaws.com/itemsoldlist";
+    private static final String URL_ITEMS_SOLD_QUERY = "obsfuscate url";
 
     //Create a Context variable to be accessed from itemssold query utils
     private static Context mContext;

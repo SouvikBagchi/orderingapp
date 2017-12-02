@@ -22,7 +22,7 @@ import java.util.List;
 
 public class DeliverySlotLoadActivity extends AppCompatActivity {
 
-    private static String mDeliverySlotURL = "http://ec2-34-209-89-98.us-west-2.compute.amazonaws.com/deliveryslot";
+    private static String mDeliverySlotURL = "http:url to fetch data";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

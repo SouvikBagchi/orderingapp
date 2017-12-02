@@ -24,7 +24,7 @@ import java.util.List;
 
 public class OrderLoadingActivity extends AppCompatActivity {
 
-    private static final String URL_ORDER_ITEM_QUERY = "http://ec2-34-209-89-98.us-west-2.compute.amazonaws.com/getorders";
+    private static final String URL_ORDER_ITEM_QUERY = "obsfuscated url";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

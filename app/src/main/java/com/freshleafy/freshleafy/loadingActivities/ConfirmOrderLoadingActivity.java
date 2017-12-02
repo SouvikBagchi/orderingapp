@@ -26,7 +26,7 @@ import java.util.List;
 
 public class ConfirmOrderLoadingActivity extends AppCompatActivity {
 
-    private static final String POST_ORDER_URL = "http://ec2-34-209-89-98.us-west-2.compute.amazonaws.com/addordertesting";
+    private static final String POST_ORDER_URL = "http:url to fetch json data";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
